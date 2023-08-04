@@ -1,0 +1,63 @@
+:root {
+  --primary: #90adbb;
+  --secondary: #f6f6f6;
+
+  --blue-1: #bfced8;
+  --blue-2: #b0c2ce;
+  --blue-3: #a0b5c5;
+  --blue-4: #809db1;
+  --blue-5: #7090a8;
+  --blue-6: #61849e;
+}
+
+html {
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+body {
+  max-width: 100vw;
+  display: block;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+  max-width: 100vw;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.pageContent {
+  min-height: calc(100vh - 120px);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--secondary);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--blue-5);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
