@@ -48,6 +48,13 @@ export default function Header() {
           Location
         </Link>
         <Link
+          to="/services"
+          className="header-links"
+          onClick={() => closeMenu()}
+        >
+          Services
+        </Link>
+        <Link
           to="/booking"
           className="header-links"
           onClick={() => closeMenu()}

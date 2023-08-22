@@ -1,0 +1,194 @@
+.booking-ctnr {
+  width: 100%;
+  min-height: calc(100vh - 120px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-ctnr {
+  width: 60%;
+  height: auto;
+  padding: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form h1 {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  color: var(--blue-6);
+  border-bottom: 1px solid var(--blue-6);
+}
+
+.booking-selection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.selections {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  font-size: 16px;
+  color: var(--blue-4);
+}
+
+.selections .sections {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.sections div {
+  width: 70%;
+  padding: 5px;
+}
+
+.booking-selection h2 {
+  width: 80%;
+  color: var(--blue-6);
+  font-size: 24px;
+  border-bottom: 1px solid var(--blue-6);
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.styled-checkbox {
+  position: absolute; /* take it out of document flow */
+  opacity: 0; /* hide it */
+
+  & + label {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  /* Box. */
+  & + label:before {
+    content: "";
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: 1px solid var(--blue-4);
+  }
+
+  /* Box hover */
+  &:hover + label:before {
+    background: var(--blue-1);
+  }
+
+  /* Box focus */
+  &:focus + label:before {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+  }
+
+  /* Box checked */
+  &:checked + label:before {
+    background: var(--blue-4);
+  }
+
+  &:checked + label:after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 9px;
+    width: 2px;
+    height: 2px;
+    box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white,
+      4px -6px 0 white, 4px -8px 0 white;
+    transform: rotate(45deg);
+  }
+}
+
+.inputField {
+  width: 70%;
+  padding: 10px;
+  color: var(--blue-6);
+  font-size: 16px;
+  border: 1px solid var(--blue-6);
+  outline: none;
+  border-radius: 5px;
+}
+
+.inputField::placeholder {
+  color: var(--blue-6);
+}
+
+/*the container must be positioned relative:*/
+.custom-select {
+  position: relative;
+  font-family: Arial;
+  width: 70%;
+}
+
+.labels {
+  width: 70%;
+  color: var(--blue-6);
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.services-submit {
+  width: 100%;
+  font-size: 24px;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--blue-6);
+  border: none;
+}
+
+.services-submit:hover {
+  background-color: var(--blue-5);
+  cursor: pointer;
+}
+
+/* Select */
+.custom-select {
+  width: 70%;
+}
+
+.select {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--blue-6);
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+  color: var(--blue-6);
+}
+
+.error::placeholder {
+  color: red;
+}
+.error {
+  border: 1px solid red;
+}
+
+.error-dropdown {
+  border-bottom: 1px solid red;
+  color: red;
+}
+.error-dropdown option {
+  color: var(--blue-6);
+}
+
+select * {
+  font-size: 16px;
+}

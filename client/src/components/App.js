@@ -8,6 +8,7 @@ import Footer from "./Footer";
 import Product from "./subpages/Product";
 import Location from "./subpages/Location";
 import Booking from "./subpages/Booking";
+import Services from "./subpages/Services";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route exact path="/products" element={<Product />} />
         <Route exact path="/location" element={<Location />} />
         <Route exact path="/booking" element={<Booking />} />
+        <Route exact path="/services" element={<Services />} />
       </Routes>
       <Footer />
     </BrowserRouter>

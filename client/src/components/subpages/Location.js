@@ -115,6 +115,7 @@ export default function Location() {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             id="location"
+            title="location iframe"
           ></iframe>
         </div>
       </div>
